@@ -195,12 +195,23 @@
 	}
 
 	.standard-button,
-    .secondary-button, {
+    .secondary-button {
 		font-size: 13px;
 		min-width: 100px;
 		padding: 11px 20px 11px 20px;
 	}
     .testimonial .testimonial-slide .content p {
 		padding:0 10px;
+	}
+}
+@media(max-width:500px) {
+	#title {
+		top:20%;
+	}
+	#additional {
+		bottom:20%;
+	}
+	body {
+		background:#00aeef;
 	}
 }

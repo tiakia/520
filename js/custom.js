@@ -19,14 +19,14 @@
 
     function mainNav() {
         var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) $('.sticky-navigation').stop().animate({
-            "opacity": '1',
-            "top": '0'
-        });
-        else $('.sticky-navigation').stop().animate({
-            "opacity": '0',
-            "top": '-75'
-        });
+        if (top > 200 && top <400){
+            $('.sticky-navigation').addClass("prev");
+        }else if(top>400){
+            $('.sticky-navigation').addClass("active");
+        }
+        else{
+            $('.sticky-navigation').removeClass("active prev");
+        }
     }
 
 
